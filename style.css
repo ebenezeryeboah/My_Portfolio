@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.898)
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding-right: 50px;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.898);
+    align-items: center;
+}
+
+.nav-buttons>li>a {
+    color: #fff;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: font-size 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-buttons li:nth-child(4)>a {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.898);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.nav-buttons li a:hover {
+    font-size: 16px;
+    /* color: aqua; */
+    animation: bounce 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navbar2 {
+    height: 5vh;
+
+}
+
+.main-section {
+    display: flex;
+    height: 75vh;
+
+}
+
+.first-page-logo {
+    height: 50px;
+}
+
+.left-main-section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+.right-main-section {
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.898);
+
+}
+
+.second-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 50px;
+    height: 6vh;
+    align-items: center;
+}
+
+.second-nav>li>a {
+    color: #fff;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.second-nav li:nth-child(4)>a {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.898);
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+.top-left-main-section,
+.down-left-main-section {
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
