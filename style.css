@@ -17,17 +17,18 @@ li {
 
 .nav-buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 50px;
-    padding-right: 50px;
+    padding-left: 50px;
     height: 6vh;
     background-color: rgba(0, 0, 0, 0.898);
     align-items: center;
+    padding-top: 50px;
 }
 
 .nav-buttons>li>a {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -42,7 +43,7 @@ li {
 }
 
 .nav-buttons li a:hover {
-    font-size: 16px;
+    font-size: 14px;
     /* color: aqua; */
     animation: bounce 0.3s ease-in-out;
 }
