@@ -17,7 +17,7 @@
 
 <body>
     <main>
-        <div class="main-section">
+        <div class="main-section" id="home">
             <div class="left-main-section">
                 <div class="top-left-main-section">
                     <a href=""><img src="./files/icons/log2.png" alt="Logo" class="first-page-logo"></a>
@@ -39,12 +39,14 @@
             <div class="right-main-section">
                 <div class="navbar1">
                     <ul class="nav-buttons">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About me</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact me</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact-me">Contact me</a></li>
                     </ul>
+                    <a href="" class="three-bars"><i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
                     <div class="image-main-photo">
                         <img src="./files/images/me2.png" alt="">
                     </div>
@@ -65,7 +67,7 @@
 
 
     </main>
-    <div class="about-me">
+    <div class="about-me" id="about-me">
         <div class="about-me-box">
             <p class="about-me-text">ABOUT ME</p>
             <p>Behind every fast, intuitive, and accessible website is a developer who understands that technology
@@ -99,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="skill-set">
+    <div class="skill-set" id="skills">
         <p class="skills">SKILLS</p>
         <div class="using-and-learning">
             <div class="using">
@@ -148,7 +150,7 @@
     </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <p>Portfolio</p>
         <div class="portfolio-images">
             <a href="https://pyro-devs-bmi-calculator.netlify.app/bmi-calculator/" target="_blank"><img
@@ -156,7 +158,7 @@
         </div>
         <p>And many more to come!</p>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact-me">
         <h4>CONTACT</h4>
         <p class="contact-text">Have a project in mind or need a website that stands out? Let’s bring your ideas to
             life! Feel free to reach
@@ -172,9 +174,9 @@
     </div>
     <div class="footer">
         <div class="to-top">
-            <a href=""><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            <a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
             </a>
-            <a href="">BACK TO TOP</a>
+            <a href="#home">BACK TO TOP</a>
         </div>
         <div class="social-icon2">
             <a href=""><img src="./files/icons/Designer/ss1.png" alt="">
