@@ -583,8 +583,26 @@ form>button:hover {
     }
 
     .about-me {
-        height: 100vh;
+        height: 130vh;
+        margin-bottom: 50px;
     }
+
+    .portfolio {
+        padding-top: 60px;
+    }
+
+    .right-main-section {
+        display: none;
+    }
+
+    .bottom-main-section>p {
+        width: 90vw;
+    }
+
+    .bottom-main-section {
+        padding: 25px;
+    }
+
 
 
 
