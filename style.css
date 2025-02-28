@@ -561,7 +561,57 @@ form>button:hover {
         text-align: right;
         padding: 15px 20px 0px 0px;
     }
+
+    .right-main-section {
+        display: none;
+    }
+
+    .design-development-and-maintenance {
+        padding: 0px;
+    }
+
+    .design-and-development {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    form>textarea,
+    form>input {
+        width: 300px;
+    }
+
+    .portfolio {
+        height: 50vh;
+        justify-content: space-around;
+        padding: 20px 0px;
+    }
+
+    .about-me {
+        justify-content: space-around;
+    }
+
+    .bottom-main-section {
+        height: max-content;
+    }
+
+    .design,
+    .development,
+    .maintenance {
+        width: 80%;
+    }
+
+    .bottom-main-section>p {
+        width: 90%;
+        padding: 0;
+    }
+
+    .skill-set {
+        height: 120vh;
+    }
 }
+
 
 @media (min-width: 481px) and (max-width: 767px) {
     .nav-buttons {
@@ -737,3 +787,11 @@ form>button:hover {
 }
 
 @media (min-width: 1440px) {}
+
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 20px;
+        ```````````````````
+    }
+}
