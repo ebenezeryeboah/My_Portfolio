@@ -436,6 +436,10 @@ form>input {
 
 }
 
+form>input:active {
+    background-color: #d7d7d7;
+}
+
 form>input::placeholder,
 textarea::placeholder {
     text-transform: uppercase;
