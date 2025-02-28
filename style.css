@@ -610,6 +610,10 @@ form>button:hover {
     .skill-set {
         height: 120vh;
     }
+
+    .three-bars {
+        display: block;
+    }
 }
 
 
