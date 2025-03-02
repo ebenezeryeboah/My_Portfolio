@@ -42,7 +42,6 @@ li {
     gap: 50px;
     padding-left: 5vw;
     height: 6vh;
-    background-color: rgba(0, 0, 0);
     align-items: center;
     padding-top: 50px;
 }
@@ -95,7 +94,7 @@ li {
 }
 
 .left-main-section {
-    width: 50vw;
+    width: 47.5%;
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
@@ -104,9 +103,11 @@ li {
 }
 
 .right-main-section {
-    width: 50vw;
-    background-color: rgba(0, 0, 0, 0.898);
-
+    width: 52.5%;
+    background-color: rgba(0, 0, 0);
+    border-left: 80px solid #d7d7d7;
+    border-bottom: 75vh solid transparent;
+    box-sizing: border-box;
 }
 
 .second-nav {
@@ -117,6 +118,8 @@ li {
     height: 6vh;
     align-items: center;
 }
+
+
 
 .second-nav>li>a {
     color: #fff;
