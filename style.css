@@ -217,7 +217,6 @@ li {
 
 .about-me {
     background-color: #d7d7d7;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -230,7 +229,6 @@ li {
     flex-direction: column;
     justify-content: space-around;
     gap: 40px;
-    height: 50vh;
     padding-top: 50px;
 }
 
@@ -260,7 +258,7 @@ li {
 }
 
 .design-development-and-maintenance {
-    padding: 50px 200px;
+    padding: 20px 200px;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -275,12 +273,27 @@ li {
     /* align-items: center; */
     gap: 50px;
     /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
 .design,
-.development {
+.development,
+.maintenance {
+    flex-grow: 1;
+    flex-basis: 350px;
     width: 50%;
+
 }
+
+.maintenance {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
 
 .design>h4,
 .development>h4,
@@ -299,10 +312,6 @@ li {
     text-align: justify;
 }
 
-
-.maintenance {
-    width: 50%;
-}
 
 
 .skill-set {
@@ -616,6 +625,19 @@ form>button:hover {
         height: 120vh;
     }
 
+    .design-development-and-maintenance {
+        height: auto;
+    }
+
+    .maintenance,
+    .design,
+    .development {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: auto;
+    }
+
 
 }
 
@@ -663,13 +685,19 @@ form>button:hover {
     }
 
 
+    .design-development-and-maintenance {
+        height: auto;
+    }
 
 
-    .maintenance {
-        width: 100%;
+    .maintenance,
+    .design,
+    .development {
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-basis: auto;
+
     }
 
     .design-development-and-maintenance {
@@ -778,6 +806,9 @@ form>button:hover {
 
     }
 
+    .maintenance {
+        display: block;
+    }
 
 }
 
@@ -799,5 +830,13 @@ form>button:hover {
 @media (min-width: 1920px) {
     body {
         font-size: 20px;
+    }
+
+    .design,
+    .development,
+    .maintenance {
+        width: 50%;
+        flex-grow: 1;
+        flex-basis: 200px;
     }
 }
