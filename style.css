@@ -94,7 +94,7 @@ li {
 }
 
 .left-main-section {
-    width: 50%;
+    width: 47.5%;
     display: flex;
     flex-direction: column;
     padding-left: 10vw;
@@ -103,10 +103,10 @@ li {
 }
 
 .right-main-section {
-    width: 50%;
+    width: 52.5%;
     background-color: rgba(0, 0, 0);
-    border-left: 80px solid #000;
-    border-bottom: 330px solid transparent;
+    border-left: 80px solid #d7d7d7;
+    border-bottom: 75vh solid transparent;
     box-sizing: border-box;
 }
 
@@ -118,6 +118,8 @@ li {
     height: 6vh;
     align-items: center;
 }
+
+
 
 .second-nav>li>a {
     color: #fff;
