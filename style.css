@@ -586,13 +586,17 @@ form>button:hover {
     display: none;
 }
 
+
+
 .read-more-text {
-    display: none;
+    display: inline;
 }
 
 .reveal {
-    display: inline;
+    display: none;
 }
+
+
 
 
 
