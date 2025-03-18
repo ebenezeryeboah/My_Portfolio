@@ -352,7 +352,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 50px;
+    gap: 20px 50px;
     width: 60vw;
 }
 
@@ -577,6 +577,8 @@ form>button:hover {
 }
 
 @media (max-width: 480px) {
+
+
     .nav-buttons {
         display: none;
     }
