@@ -203,6 +203,9 @@ li {
 
 .bottom-main-section p:nth-child(3) {
     font-size: 12px;
+    color: #909090;
+    font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -584,12 +587,15 @@ form>button:hover {
 }
 
 .read-more-text {
-    display: hidden;
+    display: none;
 }
 
-.read-more-text .reveal {
-    display: block;
+.reveal {
+    display: inline;
 }
+
+
+
 
 @media (max-width: 480px) {
 
