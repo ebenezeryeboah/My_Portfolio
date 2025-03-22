@@ -19,3 +19,7 @@ readMoreButton.addEventListener(
 
     }
 )
+
+
+// Working on the hamburger menu
+
