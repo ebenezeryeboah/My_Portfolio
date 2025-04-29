@@ -401,9 +401,10 @@ li {
 .portfolio {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
     justify-content: space-around;
+    gap: 30px;
 }
 
 .portfolio>p:nth-child(1) {
@@ -419,9 +420,16 @@ li {
     letter-spacing: 4px;
 }
 
-.portfolio-images img {
-    width: 70vw;
+.portfolio-images {
+    display: flex;
+    gap: 20px;
+
 }
+
+.portfolio-images img {
+    height: 40vh;
+}
+
 
 .portfolio-images img:hover {
     border: 3px solid #c4c4c4;
@@ -703,7 +711,7 @@ form>button:hover {
     }
 
     .portfolio {
-        height: 50vh;
+        /* height: 50vh; */
         justify-content: space-around;
         padding: 20px 0px;
     }
@@ -730,6 +738,18 @@ form>button:hover {
     .bottom-main-section p:nth-child(2) {
         width: 86vw;
 
+    }
+
+    .portfolio-images {
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px; */
+        justify-self: center;
+        align-items: center;
+    }
+
+    .portfolio-images img {
+        height: 150px
     }
 
     .skill-set {
@@ -791,6 +811,17 @@ form>button:hover {
         align-items: center;
         gap: 50px;
         height: max-content;
+    }
+
+    .portfolio-images {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .portfolio-images img {
+        height: 250px
     }
 
     .right-main-section {
@@ -866,9 +897,16 @@ form>button:hover {
         justify-content: space-around;
     }
 
-    /* .bottom-main-section {
-        height: 27vh;
-    } */
+    .portfolio-images {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .portfolio-images img {
+        height: 350px
+    }
 
 
     .image-main-photo {
@@ -888,7 +926,7 @@ form>button:hover {
     }
 
     .portfolio {
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     .skill-set {
