@@ -1015,3 +1015,67 @@ form>button:hover {
         flex-basis: 200px;
     }
 }
+
+
+.portfolio-images {
+  /* responsive grid: as many columns as fit, min width 220px */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* optional: prevent it stretching too wide on huge screens */
+  padding: 0 20px;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.portfolio-images a {
+  display: block;            /* let the link be the image container */
+  overflow: hidden;         /* hide any overflow when image scales on hover */
+  border-radius: 8px;       /* subtle rounding (optional) */
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow .25s ease;
+}
+
+/* responsive image: fills container, keeps aspect ratio, crops if necessary */
+.portfolio-images img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;        /* cover preserves aspect while filling the box */
+  aspect-ratio: 16/10;      /* modern browsers: ensures consistent height across grid items */
+  max-height: 60vh;         /* prevents a single row from becoming too tall on large screens */
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* hover/active effects */
+.portfolio-images a:hover,
+.portfolio-images a:focus {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.portfolio-images img:hover {
+  transform: scale(1.03);
+}
+
+/* small-screen adjustments */
+@media (max-width: 480px) {
+  .portfolio-images {
+    gap: 12px;
+    padding: 0 12px;
+    grid-template-columns: 1fr; /* single column on tiny screens */
+  }
+  .portfolio-images img {
+    aspect-ratio: 4/3; /* a bit taller on phones if you prefer */
+    max-height: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .portfolio-images {
+    grid-template-columns: repeat(2, 1fr); /* two columns on small tablets/large phones */
+    gap: 16px;
+  }
+  .portfolio-images img {
+    aspect-ratio: 4/3;
+  }
+}
